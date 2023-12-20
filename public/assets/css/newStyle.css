@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+.page-main, h1, h2, h3, h4, h5, h6, p {
+    /* font-family: 'Noto Sans Arabic', sans-serif; */
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.wizard>.content>.body input.parsley-error+ul {
+    color: red;
+    margin-top: 5px;
+}
+
+.wizard>.actions .disabled a {
+    visibility: hidden;
+}
+
+/* Header */
+.hor-header {
+    position: fixed;
+    width: 100%;
+}
+
+
+
+.ceckDiv {
+    height: 250px;
+    width: 250px;
+    border: #04b8ea solid 1px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.ceckDiv i {
+    font-size: 3.2em;
+}
+
+
+.card-header {
+    justify-content: center;
+    box-shadow: 0px 2px 8px rgba(4, 4, 7, 0.1);
+    z-index: 1;
+    padding: 20px;
+}
+
+.card-header:before {
+    visibility: hidden;
+}
+
+.wizard>.content>.title.current {
+    text-align: center;
+    visibility: hidden;
+
+}
+
+.card-title:only-child {
+    margin-bottom: 0;
+    font-size: 2.2em;
+    color: #04b8ea;
+    font-weight: 800;
+}
+
+
+
+.wizard>.steps .done a {
+    color: rgb(4 184 234);
+}
+
+.wizard>.steps .done a .number, .wizard>.steps .done a:hover .number, .wizard>.steps .done a:active .number {
+    background: rgb(4 184 234);
+}
+
+.singIn {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-weight: 600;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+/**
+  Component
+**/
+
+label {
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.card-input-element {
+    display: none;
+}
+
+.form-control:focus {
+    box-shadow: 0px 2px 2px rgba(4, 4, 7, 0.1);
+}
+
+.wizard>.steps>ul {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 560px) {
+    .wizard>.steps>ul {
+        justify-content: right;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 600px) {
+    .hor-content.main-content {
+        margin-top: 0;
+    }
+
+}
+
+
+.wizard>.actions a {
+    background-color: #04B8EA;
+    box-shadow: 0px 6px 8px rgba(4, 4, 7, 0.1);
+    padding: 9px 40px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.wizard>.actions a:hover {
+    background-color: #244869;
+    box-shadow: none;
+    padding: 9px 40px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.card-input-element:checked+.ceckDiv {
+    border: 3px solid #04b8ea;
+    background-color: #04b8ea;
+    color: #fff;
+}
+
+.card-input-element:checked+.cTitle {
+    color: #04b8ea !important;
+}
+
+.fCeck {
+    cursor: pointer;
+}
+
+.ceckDiv:hover {
+    border: 3px solid #04b8ea;
+    background-color: #04b8ea;
+    color: #fff;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.ceckDiv:hover~.cTitle {
+    color: #04b8ea;
+}
+
+.cTitle {
+    margin-top: 20px !important;
+}
+
+.card-body svg {
+    width: 60%;
+    display: flex;
+    position: relative;
+    bottom: 45px;
+}
+
+
+
+
+/* inPut */
+
+.inputRadio {
+    display: none;
+}
+
+.inputRadio:not(:disabled)~.labelinR {
+    cursor: pointer;
+}
+
+.inputRadio:disabled~.labelinR {
+    color: #bcc2bf;
+    border-color: #bcc2bf;
+    box-shadow: none;
+    cursor: not-allowed;
+
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.labelinR {
+    color: #04b8ea;
+    height: 70%;
+    display: block;
+    background: white;
+    border: 1px solid #dbe2eb;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+
+
+.labelinR:hover:before {
+    content: '';
+
+    height: 100%;
+    bottom: 0;
+    border-radius: 0 0 0 0;
+    background-color: #04b8ea;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
+    -ms-border-radius: 0 0 0 0;
+    -o-border-radius: 0 0 0 0;
+}
+
+.inputRadio:checked+.labelinR {
+    background: rgb(4 184 234);
+    color: white;
+    box-shadow: none;
+}
+
+.inputRadio:checked+.labelinR h2 {
+    position: absolute;
+    font-size: 5.5em;
+    left: 1px;
+
+
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+
+}
+
+
+
+.inputRadio:checked+.labelinR::after {
+    color: #3d3f43;
+    font-family: FontAwesome;
+    border: 2px solid rgb(4 184 234);
+    content: "";
+    font-size: 24px;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #244869 !important;
+    border-color: #244869;
+}
